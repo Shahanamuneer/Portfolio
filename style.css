@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+   
+     background-color: rgb(129, 131, 130);
+}
+.hero {
+      height: 100vh;
+      width: 100%;
+      background: url('shaanu1.jpeg') no-repeat center /cover;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* dark overlay */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+
+
+
+
+
+header {
+  font-family: Mozilla Headline, Times, monospace;
+  font-style:bold italic;
+  font-size: larger;  
+  line-height: normal;
+  color: #070707;
+  
+  text-align: center;
+}
+
+
+
+
+
+.navbar {
+    
+  align-items: top;
+  text-align: left;
+  background-color: #555;
+  overflow: auto;
+
+  
+  
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: left;
+  padding: 10px;
+  color:black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  text-align: left;
+  background-color: #c7c5c5;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Creates 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back side when not flipped */
+}
+
+.flip-card-front {
+  background-color: #f6f2f2;
+}
+
+.flip-card-back {
+  background-color: #595b5c;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+section {
+  padding: 2rem;
+  margin: 1rem 0;
+}
+#about{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ #portfolio {
+      padding: 60px 20px;
+      background-color: rgb(129, 131, 130);
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .portfolio-item {
+      width: 300px;
+      background: rgb(244, 246, 245);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .portfolio-item p {
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+
+/* Add a hover effect if you want */
+
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-github {
+  background: #0a0b0b;
+  color: #555;
+  font-size: x-large;
+
+  
+}
+
+.fa-instagram{
+  font-size: x-large;
+  color: #0a0b0b;
+}
+.fa-linkedin {
+  
+  font-size:x-large;
+  color:rgb(11, 11, 11);
+}
+#contact :hover {
+  text-align: left;
+  background-color: #c7c5c5;
+}
+address {
+ color: black;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
